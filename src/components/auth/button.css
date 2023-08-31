@@ -1,0 +1,80 @@
+.auth__btn {
+  width: 100%;
+  padding-block: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-block: 1rem;
+  background: black;
+  color: #1D9BF0;
+  border: 1px solid #2A3239;
+}
+
+.auth__btn_kakao {
+  width: 100%;
+  padding-block: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-block: 1rem;
+  background: #FEE500;
+  color: black;
+  border: 1px solid #FEE500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth__btn_kakao .auth__btn_label {
+  margin-left: 2rem;
+}
+
+.auth__btn_naver {
+  width: 100%;
+  padding-block: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-block: 1rem;
+  background: #03C75A;
+  color: white;
+  border: 1px solid #03C75A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth__btn_naver .auth__btn_label {
+  margin-left: 2rem;
+}
+
+.auth__btn_google {
+  width: 100%;
+  padding-block: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-block: 1rem;
+  background: white;
+  color: black;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth__btn_google .auth__btn_label {
+  margin-left: 2rem;
+}
+
+.auth__btn_register {
+  width: 100%;
+  padding-block: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-block: 1rem;
+  background: #1D9BF0;
+  color: white;
+  border: 1px solid #1D9BF0;
+}
+
+.auth__btn_label {
+  font-size: 1rem;
+  font-weight: 600;
+}
