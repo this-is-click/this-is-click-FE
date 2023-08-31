@@ -1,0 +1,26 @@
+.container {
+  padding: 15px;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+}
+.id {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0 0 10px 0;
+}
+
+.box-title {
+  font-size: 20px;
+  padding: 0 0 10px 0;
+}
+
+.box-content {
+  font-size: 15px;
+  padding: 0 0 10px 0;
+}
+
+.box-img {
+  max-width: 500px;
+}
+.box-img img {
+  width: 90%;
+}

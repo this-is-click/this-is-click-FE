@@ -1,0 +1,13 @@
+.board-container {
+  margin: 20px;
+  margin-top: 40px;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.board-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin: 20px 20px 20px 20px;
+}
