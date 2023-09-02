@@ -14,21 +14,24 @@ function CreatePost() {
 
   const handleCreatePost = async () => {
     try {
-      const imageFormData = new FormData();
+      let imageUrl = null;
+
       if (imageFile) {
+        const imageFormData = new FormData();
         imageFormData.append("image", imageFile);
         const imageResponse = await axios.post(
           "http://localhost:8080/api/image",
           imageFormData
         );
         console.log("이미지 업로드 완료:", imageResponse.data.imageUrl);
+        imageUrl = imageResponse.data.imageUrl;
       }
 
      
       const postData = {
         title: title,
         content: content,
-        imageUrl: imageFile ? imageResponse.data.imageUrl : null, 
+        imageUrl: imageUrl
       };
 
       const apiAddress = "http://localhost:8080/api/posts";
