@@ -1,6 +1,6 @@
 import './auth.css';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Button from '../../components/auth/Button'
 import AuthModal from '../../components/auth/AuthModal';
@@ -9,6 +9,7 @@ import LoginModal from '../../components/auth/LoginModal';
 import kakaoPath from '../../assets/auth/kakao-logo.svg';
 import naverPath from '../../assets/auth/naver-logo.svg';
 import googlePath from '../../assets/auth/google-logo.svg';
+import axios from 'axios';
 
 const Auth = () => {
   const [showRegister, setShowRegister] = useState(false);
@@ -22,6 +23,19 @@ const Auth = () => {
     setShowLogin(!showLogin);
     console.log(showLogin)
   };
+
+  useEffect(() => {
+  const fetchData = async () => {
+    try {
+      const response = await axios.get('http://localhost:8080/api/posts');
+      console.log(response.data);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+  fetchData();
+}, []);
 
   return (
     <>
