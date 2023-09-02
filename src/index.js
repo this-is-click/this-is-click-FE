@@ -12,7 +12,9 @@ const router = createBrowserRouter([
     )
   },
   {
+    // 설정할 url 주소
     path: 'auth',
+    // 페이지에 보여줄 파일
     element: <Auth />
   }
 ])
