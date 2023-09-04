@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Auth from "./pages/auth/auth";
-import MyPage from "./emily/pages/MyPage";
+import MyPage from "./emily/pages/myPage";
 
 const router = createBrowserRouter([
   {

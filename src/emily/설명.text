@@ -1,0 +1,15 @@
+
+// My page . js
+
+
+ 1. 두 컨텐츠 구성요소가 같기에 모두 Board 컴포넌츠로 구성하였습니다.
+
+ 2. Board는 데이터를 card 컴포넌츠로 map하여 구성하였습니다.
+
+ 3. 각 card map에 사용되는 데이터는 각각 Board가 사용되어지는 My page . js에서 import하여  info 프롭스로 내려줍니다.
+
+ -> My posts -> service 폴더 getMyPost 로 데이터를 가져옵니다.(getApiAdress에서 백엔드 주소를 가져옵니다.)
+ -> Book mark -> service 폴더 getMyBookmark 로 데이터를 가져옵니다.(getApiAdress에서 백엔드 주소를 가져옵니다.)
+
+  + 각 데이터에서 user_id 값이 사용되어지기 때문에 로그인시에 담으시는 아이디값을 넣어주시기 바랍니다.
+  + 아이디값이 넣어지면  My page . js 주석처리를 풀러 처리되는지 확인 해야합니다!
