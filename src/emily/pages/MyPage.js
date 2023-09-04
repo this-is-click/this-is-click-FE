@@ -9,8 +9,8 @@ import getMyPosts from "../service/getMyPosts";
 const MyPage = () => {
   // const myBookmark = getMyBookmark();
   // const myPosts = getMyPosts();
-  // const [postsInfo,setPostsInfo]=useEffect([])
-  // const [bookMarkInfo,setBookMarkInfo]=useEffect([])
+  // const [postsInfo,setPostsInfo]=useState([])
+  // const [bookMarkInfo,setBookMarkInfo]=useState([])
   // useEffect(async()=>{
   //   const bookmark= await myBookmark ();
   //   const posts= await myPosts();
