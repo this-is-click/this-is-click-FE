@@ -67,10 +67,14 @@ function CreatePost() {
           onChange={(e) => setContent(e.target.value)}
         />
       </div>
+      <div className="ImageUploader-container">
       <ImageUploader onImageUpload={handleImageUpload} />
+      </div>
+      <div className="create-post-button-container">
       <button className="create-post-button" onClick={handleCreatePost}>
         글쓰기
       </button>
+      </div>
     </div>
   );
 }
