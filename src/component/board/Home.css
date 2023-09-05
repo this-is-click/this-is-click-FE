@@ -1,0 +1,21 @@
+
+.createBtn {
+    display: flex;
+    justify-content: center;
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 10px auto 0;
+    width: 300px;
+  }
+  
+  .createBtn:hover {
+    background-color: #0056b3;
+  }
+  
