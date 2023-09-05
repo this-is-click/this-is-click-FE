@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Post from './Post';
 
 
 function List({ data, setData }) {
@@ -25,25 +26,10 @@ function List({ data, setData }) {
   };
   return (
     <div className="list">
-      {data.map((item) => (
-        <div className="list-item" key={item.post_id}>
-          <div className="list-item-text">
-            <h2 className="list-item-title">{item.title}</h2>
-            <p className="list-item-content">{item.content}</p>
-            <img src={item.imageUrl} alt="Item" className="list-item-image" />
-          </div>
-          <div className="list-item-buttons">
-              <button className="button" onClick={() => handleEditClick(item)}>
-                수정하기
-              </button>
-              <button className="button" onClick={() => handleDeleteClick(item.post_id)}>
-                삭제하기
-              </button>
-            </div>
-        </div>
-      ))}
+      {data.map((item) => 
+        <Post item={item} setData={setData}/>)}
     </div>
-  );
+  )
 }
 
 export default List;

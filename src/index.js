@@ -13,8 +13,8 @@ import Home from './component/board/Home';
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <Home />
+    "path": '/',
+    "element": <Home />
   },
   {
     // 설정할 url 주소
